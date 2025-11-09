@@ -1,22 +1,15 @@
-import {router} from "expo-router";
+import { router } from "expo-router";
 import { styled } from "styled-components/native";
 
 export default function Componente() {
-  
-
-
-
-
-
   return (
     <Container>
-      <Icon source="https://i.ibb.co/qL45NF9y/modista.png"/>
+      <Icon source={{ uri: "https://i.ibb.co/qL45NF9y/modista.png" }} />
       <Title>Conversor</Title>
       <SubTitle>(cm) a (m)</SubTitle>
-      <StartButton onPress={()=>router.push("/conversor")}>
+      <StartButton onPress={() => router.push("/(1-conversor)/conversor")}>
         <ButtonText>Iniciar</ButtonText>
       </StartButton>
-      `
     </Container>
   );
 }

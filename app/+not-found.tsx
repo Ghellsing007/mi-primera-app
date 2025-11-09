@@ -1,14 +1,14 @@
-/* import { Link, Stack } from "expo-router";
+import { Link, Stack } from "expo-router";
 import { styled } from "styled-components/native";
 
 export default function NotFoundScreen() {
   return (
     <>
-      <Stack.Screen options={{ title: "Página no encontrada" }} />
+      <Stack.Screen options={{ title: "Pagina no encontrada" }} />
       <Container>
         <Title>Ups, esta pantalla no existe.</Title>
         <Description>
-          Verifica la ruta o vuelve al inicio para continuar explorando la aplicación.
+          Verifica la ruta o vuelve al inicio para continuar explorando la aplicacion.
         </Description>
         <Link href="/" style={{ marginTop: 12 }}>
           <LinkText accessibilityRole="link">Volver al inicio</LinkText>
@@ -49,4 +49,3 @@ const LinkText = styled.Text`
   font-weight: 600;
 `;
 
- */

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Button } from "react-native";
 import { styled, ThemeProvider } from "styled-components/native";
 
-export default function componente() {
+export default function Index() {
   const router = useRouter();
 
   const data = {
@@ -14,7 +14,7 @@ export default function componente() {
 
   const handlePress = () => {
     router.push({
-      pathname: "/teoria/screen2",
+      pathname: "/(0-teoria)/screen2",
       params: data,
     });
   };
@@ -46,6 +46,7 @@ export default function componente() {
       <Container>
         <Title>Hola Mundo!</Title>
         <Button title="Ir a Screen 2" onPress={handlePress} />
+        <Button title="Ir a Screen 3" onPress={()=>router.push("/(0-teoria)/screen3")} />
         <Button title="Cambiar tema" onPress={toggleTheme} />
 
         <Title>Contador: {count}</Title>
